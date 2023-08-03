@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\app",
+    "\\src\\app\\livro-dados",
+    "\\src\\app\\livro-lista",
+    "\\src\\assets"
+  ],
+  "SelectedNode": "\\src\\app\\livro-dados\\livro-dados.component.html",
+  "PreviewInSolutionExplorer": false
+}

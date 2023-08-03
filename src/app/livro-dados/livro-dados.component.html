@@ -1,0 +1,29 @@
+<main class="container">
+    <h1 class="mt-5">Detalhes do Livro</h1>
+    <div *ngIf="livro">
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Título</th>
+                    <th>Resumo</th>
+                    <th>Editora</th>
+                    <th>Autor(es)</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ livro.codigo }}</td>
+                    <td>{{ livro.titulo }}</td>
+                    <td>{{ livro.resumo }}</td>
+                    <td>{{ obterNome(livro.codEditora) }}</td>
+                    <td>{{ livro.autores.join(', ') }}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="excluir(livro.codigo)">Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</main>
